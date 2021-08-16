@@ -1,0 +1,6 @@
+D:\Projects\Projects\MyProduct\MyProduct.Logic\bin\Debug\MyProduct.Logic.dll
+D:\Projects\Projects\MyProduct\MyProduct.Logic\bin\Debug\MyProduct.Logic.pdb
+D:\Projects\Projects\MyProduct\MyProduct.Logic\obj\Debug\MyProduct.Logic.csprojAssemblyReference.cache
+D:\Projects\Projects\MyProduct\MyProduct.Logic\obj\Debug\MyProduct.Logic.csproj.CoreCompileInputs.cache
+D:\Projects\Projects\MyProduct\MyProduct.Logic\obj\Debug\MyProduct.Logic.dll
+D:\Projects\Projects\MyProduct\MyProduct.Logic\obj\Debug\MyProduct.Logic.pdb
