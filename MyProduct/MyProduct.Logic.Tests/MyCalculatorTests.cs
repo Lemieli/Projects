@@ -6,6 +6,9 @@ namespace MyProduct.Logic.Tests
     [TestClass]
     public class MyCalculatorTests
     {
+        //Get new instance of calc = maintainability/readability.
+        private static MyCalculator GetNewCalc() => new MyCalculator();
+
         [TestMethod]
         public void Add_TwoNumbers_ReturnsTheSum()
         {
@@ -20,27 +23,22 @@ namespace MyProduct.Logic.Tests
         }
 
         [TestMethod]
-        public void Add_FirstParamNegative_Throw()
+        public void Add_FirstParamNegative_Throws()
         {
             MyCalculator c = GetNewCalc();
-
             int ANY_POSITIVE = 1;
-            try
-            {
-                c.Add(-1, ANY_POSITIVE);
-            }
-            catch (Exception e)
-            {
 
-                return;
-            }
-
-            Assert.Fail("Expected exception!");
+            Assert.ThrowsException<Exception>(() => c.Add(-1, ANY_POSITIVE));
+            //Assert.ThrowsException<Exception>(delegate { c.Add(-1, ANY_POSITIVE); });
         }
+         
+        [TestMethod]
+        public void Add_SecondParamNegative_Throws()
+        {
+            MyCalculator c = GetNewCalc();
+            int ANY_POSITIVE = 1;
 
-
-        //Get new instance of calc = maintainability/readability.
-        private static MyCalculator GetNewCalc() => new MyCalculator();
-
+            Assert.ThrowsException<Exception>(() => c.Add(ANY_POSITIVE, -1));
+        }
     }
 }

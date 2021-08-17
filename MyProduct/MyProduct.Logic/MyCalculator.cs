@@ -6,10 +6,11 @@ namespace MyProduct.Logic
     {
         public int Add(int a, int b)
         {
-            if(a < 0)
+            if(a < 0 || b < 0)
             {
                 throw new Exception("Number cannot be less than zero.");
             }
+
             return a + b;
         }
     }
